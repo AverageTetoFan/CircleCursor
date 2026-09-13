@@ -67,13 +67,7 @@ jobs:
 
       # Compilar el EXE
       - name: Build EXE
-        run: |
-          pyinstaller ^
-            --onefile ^
-            --windowed ^
-            --name CursorVisual ^
-            --icon CursorVisual.ico ^
-            main.py
+        run: pyinstaller --onefile --windowed --name CursorVisual --icon CursorVisual.ico main.py
 
       # Crear una Release y adjuntar el EXE
       - name: Create Release
