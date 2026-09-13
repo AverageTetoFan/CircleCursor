@@ -1,4 +1,4 @@
 @echo off
 cd /d "%~dp0"
-start "" venv\Scripts\pythonw.exe cursor_visual.py
+start "" venv\Scripts\pythonw.exe main.py
 exit
