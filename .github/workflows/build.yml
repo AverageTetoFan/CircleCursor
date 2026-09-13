@@ -7,6 +7,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: windows-latest
@@ -80,7 +83,6 @@ jobs:
 
             Python: 3.12.10
             Build: ${{ github.run_number }}
-          files: |
-            dist/CursorVisual.exe
+          files: dist/CursorVisual.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
